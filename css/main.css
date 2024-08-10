@@ -7,7 +7,8 @@
 
 *{
     font-family: "Raleway", sans-serif;
-    margin: 0; padding: 0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
@@ -24,6 +25,13 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section{
     padding: 2rem 9%;
@@ -200,155 +208,73 @@ header .search-bar-container label:hover{
 .home .controls .pic-btn.active{
    background: var(--colorprimamry); 
 }
+/*section2*/
 .rowt{
-    width:80% ;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr) ;
-    grid-gap:50px;
-    overflow-x: hidden;
-    padding: 5rem 0;
-}
-.rowt .imgWrapper{
-    overflow: hidden;
-}
-.rowt .imgWrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.3s;
-    margin-left: 60px;
-}
-.rowt .imgWrapper:hover img{
-    transform: scale(1.25);
-}
-.rowt .contentWrapper{
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-left: 70px;
+    flex-wrap: wrap;
+    gap: 3rem;
+   
+    
 }
-.rowt .contentWrapper span.textWrapper{
-    display: block;
-    font-size: 20px;
-    text-transform: capitalize;
+.rowt .video{
+    flex: 1 1 41rem;
+}
+.rowt .video video{
+    width: 100%;
+}
+.contentWrapper{
+    flex: 1 1 31rem;
+}
+
+/*galeria home*/
+.mid{
+    height: 100vh;
+}
+.gallery{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 400px;
 }
-.rowt .contentWrapper span.textWrapper span{
+.btn2 {
     display: inline-block;
-    background: #333;
-    width: 70px;
-    height: 5px;
-}
-.rowt .contentWrapper h2{
-    font-size: 40px;
-    font-weight: 700;
-    color: #333;
-    padding-bottom:20px;
-
-}
-.rowt .contentWrapper p{
-    font-size: 16px;
-    line-height: 25px;
-    padding-bottom: 25px;
-}
-.services .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-.services .box-container .box{
-    flex: 1 1 30rem;
-    border-radius: .5rem;
-    padding: 1rem;
-    text-align: center;
-}
-.services .box-container .box i{
-    padding: 1rem;
-    font-size: 4rem;
-    color:var(--colorprimamry) ;
-}
-.services .box-container .box h3{
-   
-    font-size: 2.5rem;
-    color:#333;
-}
-.services .box-container .box p{
-   
-    font-size: 1.5rem;
-    color:#666;
-    padding:1rem 0 ;
-}
-.services .box-container .box:hover{
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-}
-.gallery .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-
-}
-.gallery .box-container .box{
-    overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-    border: 1rem solid var(--colorwhite);
-  
-    flex: 1 1 30rem;
-    height: 25rem;
-    position: relative;
-}
-.gallery .box-container img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-}
-.gallery .box-container .box .content{
-    position: absolute;
-    top: -100%; left: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background: rgba(0,0,0,.7);
-    padding: 2rem;
-    padding-top: 5rem;
-}
-.gallery .box-container .box .content h3{
-    font-size: 1.5rem ;
-    color: var(--colorprimamry);
-}
-.gallery .box-container .box .content p{
-    font-size: 1rem;
-    color: var(--colorwhite);
-    padding: .5rem 0 ;
-}
-.gallery .box-container .box:hover .content{
-    top: 0;
+    margin-top: 20px; /* Espaço acima do botão */
+    padding: 10px 20px;
+    background: var(--colorprimamry);
+    color: #f7f7f7;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--colorprimamry);
+    text-decoration: none;
+    
 }
 
-.review .review-slider{
-   padding-bottom: 2rem; 
+.img-box{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    background: url(/img/img\ teste/11.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s, opacity 0.5s;
 }
-.review .box{
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-    border-radius: .2rem;
+.img-box:nth-child(2){
+    background: url(/img/img\ teste/13.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.review .box h3{
-    color:#333;
-    font-size: 1.5rem;
+.img-box:nth-child(3){
+    background: url(/img/img\ teste/14.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.review .box p{
-    color: #666;
-    font-size: 1rem;
-    padding:1rem 0 ;
+.img-box:hover{
+    width: 600px;
+    cursor: pointer;
 }
+
+
 
 .contact .row{
     display: flex;
@@ -485,6 +411,13 @@ header .search-bar-container label:hover{
     }
     .rowt .contentWrapper p{
         line-height: 24px;
+    }
+
+    .gallery{
+        display: grid;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
     }
 }
 

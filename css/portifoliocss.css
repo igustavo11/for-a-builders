@@ -13,6 +13,13 @@
     text-decoration: none;
    
 }
+.container{
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 *::selection{
     background: var(--colorprimamry);
@@ -294,46 +301,110 @@ header .search-bar-container label:hover{
     padding:1rem 0 ;
 }
 
-.contact .row{
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 1rem;
-    align-items: center;
+.container-contact{
+    
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
-.contact .row form{
-    flex: 1 1 40rem;
-    padding: 2rem 2.5rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border: .1rem solid rgba(0,0,0,.1);
-    background: var(--colorwhite);
-    border-radius: .5rem;
+.container-contact .content-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
-/*.contact .row .image{
-    flex: 1 1 40rem;
-    
+.container-contact .content-contact .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px ;
+    position: relative;
 }
-.contact .row .image img{
-    width: 100%;
-    
-}*/
-.contact .row form .box{
-    padding: 1rem;
-    font-size: 1rem;
+.content-contact .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+}
+
+.content-contact .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.content-contact .left-side .details .text-one,
+.content-contact .left-side .details .text-two{
+    font-size: 14px;
     color: #333;
-    text-transform: none;
-    border: .1rem solid rgba(0,0,0,.1);
-    border-radius: .5rem;
-    margin: .7rem 0;
-    width: 50%;
+
 }
-.contact .row form .box:focus{
-    border-color: var(--colorprimamry);
+.content-contact .left-side .details i{
+    font-size: 30px;
+    color: var(--colorprimamry);
+    margin-bottom: 10px;
 }
-.contact .row form textarea{
-    height: 15rem;
+.content-contact .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container-contact .content-contact .right-side{
+    width: 75%;
+    margin-left: 75px;
+ 
+}
+.content-contact .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--colorprimamry);
+}
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    padding: 0 15px;
     resize: none;
 }
+.right-side .message-box{
+    min-height: 110px;
+    
+}
+.right-side .button{
+    display: inline-block;
+    margin-top:12px ;
+}
+
+.input-box input .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--colorprimamry);
+    cursor: pointer;
+   
+
+
+}
+
+
 .footer{
     background: #333;
 }
@@ -385,6 +456,12 @@ header .search-bar-container label:hover{
     section{
         padding: 2rem;
     }
+    .container-contact{
+        width: 90%;
+  
+        padding: 30px 35px 40px 35px;
+       
+    }
 }
 @media (max-width:768px){
     #menu-bar{
@@ -407,6 +484,29 @@ header .search-bar-container label:hover{
         padding: 1.5rem;
         margin: 1.5rem 0;
         
+    }
+    .container-contact{
+        margin: 40px 0;
+        height: 100%;
+       
+    }
+    .container-contact .content-contact{
+        flex-direction: column-reverse;
+
+    }
+    .container-contact .content-contact .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container-contact .content-contact .left-side::before{
+        display: none;
+    }
+    .container-contact .content-contact .right-side{
+        width: 100%;
+        margin-left: 0;
     }
 }
 
