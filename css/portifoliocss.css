@@ -407,16 +407,28 @@ header .search-bar-container label:hover{
 
 .footer{
     background: #333;
+
 }
+
 .footer .box-container{
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    /*flex-wrap: wrap;
+    gap: 1.5rem;*/
+    justify-content: space-between;
+    gap: 10rem;
+    
 }
+
 .footer .box-container .box{
     padding: .7rem 0;
     flex: 1 1 25rem;
 }
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
 .footer .box-container .box h3{
     font-size: 2rem;
     padding: .7rem 0;
@@ -437,6 +449,34 @@ header .search-bar-container label:hover{
     color: var(--colorprimamry);
     text-decoration: underline;
 }
+
+.footer .box-container .box .social-icons{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid;
+    color:var(--colorwhite);
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.footer-credit {
+    margin-top: 10px;
+    font-size: 14px; 
+    color:var(--colorwhite);
+    text-align: center; 
+}
+
 
 
 
