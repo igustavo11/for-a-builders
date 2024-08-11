@@ -85,6 +85,7 @@ header .logo span{
 }
 
 header .navbar a {
+  
     color: var(--colorwhite);
     font-size: 1rem;
     margin: 0.8rem;
@@ -106,37 +107,7 @@ header .icons i{
 header .icons i:hover{
     color: var(--colorprimamry);
 }
-header .search-bar-container{
-    position: absolute;
-    top: 100% ; left: 0; right: 0;
-    padding:1.5rem 2rem;
-    background: #333;
-    border-top: 1rem solid rgba(255, 255, 255, .2);
-    display: flex;
-    align-items: center;
-    z-index: 1001;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-header .search-bar-container.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-header .search-bar-container #search-bar{
-    width: 100%;
-    padding: 1rem;
-    text-transform: none;
-    color: #333;
-    font-size: 1rem;
-    border-radius: .5rem;
-}
-header .search-bar-container label{
-    color: var(--colorwhite);
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 1.5rem;
-}
-header .search-bar-container label:hover{
-    color: var(--colorprimamry);
-}
+
 
 #menu-bar{
     color: var(--colorwhite);
@@ -146,6 +117,7 @@ header .search-bar-container label:hover{
     padding: .5rem 1.2rem ;
     cursor: pointer;
     display: none;
+  
 }
 
 .home{
@@ -202,13 +174,26 @@ header .search-bar-container label:hover{
     background: var(--colorwhite);
     cursor: pointer;
     margin:0 .5rem ;
-    
+  
 
 }
 .home .controls .pic-btn.active{
    background: var(--colorprimamry); 
 }
+
+
 /*section2*/
+.about{
+    margin-top: 30px;
+}
+
+.about .heading-about{
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 1rem solid var(--colorprimamry);
+
+}
+
 .rowt{
     display: flex;
     justify-content: center;
@@ -226,7 +211,33 @@ header .search-bar-container label:hover{
 .contentWrapper{
     flex: 1 1 31rem;
 }
+.contentWrapper h2{
+    font-size: 2.5rem;
+}
+.contentWrapper p{
+    font-size: 18px;
+    margin-top: 18px;
+}
+.box-about{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    
+}
+.box-about .card-box{
+    text-align: center;
+    background: #9e9a9a;
+    padding: 3rem 3rem;
+    color: var(--colorwhite);
+}
+.card-box h3{
+    font-size: 3rem;
 
+}
+.card-box p{
+    font-size: 18px;
+}
 /*galeria home*/
 .mid{
     height: 100vh;
@@ -318,16 +329,26 @@ header .search-bar-container label:hover{
 }
 .footer{
     background: #333;
+
 }
+
 .footer .box-container{
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: space-between;
+    gap: 10rem;
+    
 }
+
 .footer .box-container .box{
     padding: .7rem 0;
     flex: 1 1 25rem;
 }
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
 .footer .box-container .box h3{
     font-size: 2rem;
     padding: .7rem 0;
@@ -349,6 +370,32 @@ header .search-bar-container label:hover{
     text-decoration: underline;
 }
 
+.footer .box-container .box .social-icons{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid;
+    color:var(--colorwhite);
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.footer-credit {
+    margin-top: 10px;
+    font-size: 14px; 
+    color:var(--colorwhite);
+    text-align: center; 
+}
 
 
 
