@@ -218,24 +218,24 @@ header .icons i:hover{
     font-size: 18px;
     margin-top: 18px;
 }
-.box-about{
+.boxabout{
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(4, 1fr) ;
     align-items: center;
     
 }
-.box-about .card-box{
+.boxabout .cardbox{
     text-align: center;
     background: #9e9a9a;
     padding: 3rem 3rem;
     color: var(--colorwhite);
 }
-.card-box h3{
+.cardbox h3{
     font-size: 3rem;
 
 }
-.card-box p{
+.cardbox p{
     font-size: 18px;
 }
 /*galeria home*/
@@ -284,7 +284,38 @@ header .icons i:hover{
     width: 600px;
     cursor: pointer;
 }
-
+/* section 5 */
+.value-section {
+    text-align: center;
+  }
+  
+  .value-section h2{
+    font-size: 2.5rem;
+  }
+  .value-section h2 span{
+    color: var(--colorprimamry);
+  }
+  .value-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .card {
+    flex: 1; 
+    text-align: center;
+  }
+  
+  .card img {
+    width: 450px; 
+  }
+  .card h3{
+    font-size: 26px;
+  }
+  .card p{
+    font-size: 15px;
+    font-weight: bold;
+  }
 
 
 .contact .row{
@@ -466,6 +497,17 @@ header .icons i:hover{
         background-size: cover;
         background-position: center;
     }
+    .value-cards {
+        flex-direction: column; 
+      }
+      .card img {
+        width: 350px; 
+      }
+      .boxabout{
+        grid-template-columns: 1fr;
+        width: 350px;
+        row-gap: 1em;
+      }
 }
 
 @media (max-width:450px){

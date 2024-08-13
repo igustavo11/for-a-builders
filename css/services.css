@@ -255,40 +255,54 @@ header .search-bar-container label:hover{
     margin-top: 0;
 }
 .card{
-    width: 250px;
-    flex: 1 1 25rem;
-    background-color: #f7f7f7;
-    border-radius: 8px;
+    flex: 1 1 20rem;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
     margin: 20px 10px;
+    position: relative;
 }
 .card img{
     width: 100%;
     height: auto;
 
 }
-.card-content{
-    padding: 16px;
-}
-.card-content h3{
-    font-size: 20px;
-    margin-bottom: 6px;
-}
-.card-content p{
-    color: #666;
-    font-size: 10px;
+
+.card p{
+    color: black;
+    font-size: 15px;
     line-height: 1.3;
+    text-align: center;
+    margin-top: 10px;
 }
-.card-content .btncard{
+/*.card-content{
+    padding: 16px;
+}*/
+.card-content{
+    /*margin-bottom: 6px;*/
+    width: 100%;
+    height: 60px;
+    background-color:#ffffff9f;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+    position:absolute;
+    bottom: 120px;  
+    align-content: center;
+}
+
+.card-content h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.btncard{
     display: inline-block;
-    padding: 8px 16px;
-    background-color: var(--colorprimamry);
+    padding: 20px 40px;
+    background-color: white;
+    border: 2px solid black;
     text-decoration: none;
-    border-radius: 4px;
     margin-top: 16px;
-    color: #fff;
+    color: black;
+    text-align: center;
 }
+
 
 
 
