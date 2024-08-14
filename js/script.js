@@ -36,7 +36,7 @@ picBtn.forEach(btn =>{
 
 
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 2000;
+let interval = 5000;
 
 valueDisplays.forEach((valueDisplay)=>{
     let startValue = 0;
