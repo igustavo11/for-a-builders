@@ -1,72 +1,11 @@
-$(document).ready(function(){
-    portifolio.eventos.init();
+const images = [
+    '../img/img teste/1.jpg',
+    '../img/img teste/2.jpg',
+    '../img/img teste/3.jpg',
+    '../img/img teste/4.jpg',
+    '../img/img teste/5.jpg',
+    '../img/img teste/15.jpg',
+    '../img/img teste/17.jpg',
+    '../img/img teste/15.jpg',
 
-})
-var portifolio = {  };
-
-
-portifolio.eventos = {
-
-    init : () =>{
-        portifolio.metodos.obterItensPortifolio();
-    }
-}
-
-portifolio.metodos ={
-    //listar portifolio 
-    obterItensPortifolio:(casa = 'all', vermais = false ) => {
-        var filtro = PORTIFOLIO[casa];
-        console.log(filtro)
-
-        if(!vermais) {
-            $("#itensPortifolio").html('');
-            $("#btnVerMais").removeClass('hidden');
-
-        }
-        $.each(filtro, (i, e)=>{
-            
-            let temp = portifolio.templates.item.replace(/\${img}/g, e.img)
-            .replace(/\${id}/g, e.id)
-            // botao ver mais clicado 12 itens
-
-            if(vermais && i >= 4 && i < 12){
-                $("#itensportifolio").append(temp)
-
-            }
-            // pag inicial 8 itens
-            if(!vermais && i < 4) {
-                $("#itensportifolio").append(temp)
-
-            }
-            
-          
-
-        })
-          //remover active
-          $(".container-portifolio a").removeClass('active');
-          //portifolio ativo
-          $("#portifolio-"+ categoria).addClass('active')
-    },
-     //botao ver mais
-     verMais : () => {
-
-        var ativo =  $(".container-portifolio a.active").attr('id').split('portifolio-')[1];
-        portifolio.metodos.obterItensPortifolio(ativo, true);
-
-        $("#btnVerMais").addClass('hidden');
-
-    },
-}
-
-portifolio.templates= {
-    item :`
-      <div class="box">
-                <img src="\${img}" alt="">
-                <div class="content">
-                    <h3>amazing construction</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                   
-                </div>
-            </div>`,
-
-}
+];

@@ -54,13 +54,7 @@ valueDisplays.forEach((valueDisplay)=>{
 
 
 // portifolio metodo
-const images = [
-    'https://via.placeholder.com/600x400?text=Casa+1',
-    'https://via.placeholder.com/600x400?text=Casa+2',
-    'https://via.placeholder.com/600x400?text=Casa+3',
-    'https://via.placeholder.com/600x400?text=Casa+4',
-    'https://via.placeholder.com/600x400?text=Casa+5'
-];
+
 
 const showAllHousesButton = document.getElementById('showAllHouses');
 const showHouse1Button = document.getElementById('showHouse1');

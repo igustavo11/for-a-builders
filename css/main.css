@@ -300,6 +300,7 @@ header .icons i:hover{
     justify-content: space-between;
     margin: 20px 0;
   }
+ 
   
   .card {
     flex: 1; 
@@ -333,6 +334,23 @@ header .icons i:hover{
     border-radius: .5rem;
 
 }
+
+.portfolio-home {
+    text-align: center; 
+  }
+  
+  .image-portifolio {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .image-portifolio img {
+    width: 30%; 
+    margin: 10px; 
+    
+}
+
 /*.contact .row .image{
     flex: 1 1 40rem;
     
