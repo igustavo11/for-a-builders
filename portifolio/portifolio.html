@@ -43,20 +43,21 @@
         
        
 
-        <h1>Portfólio </h1>
-        <button class="btn" id="showAllHouses">Mostrar Todas as Casas</button>
-        <button class="btn" id="showHouse1">Casa 1</button>
-        <button class="btn"id="showHouse2">Casa 2</button>
-        <button class="btn" id="showHouse3">Casa 3</button>
-        <button class="btn" id="showHouse4">Casa 4</button>
-        <button  class="btn" id="showHouse5">Casa 5</button>
+        <h1>Portfólio</h1>
+        <button class="showImagesButton active" data-set="0">botao 1</button>
+        <button class="showImagesButton" data-set="1">botao 2</button>
+        <button class="showImagesButton" data-set="2">botao 3</button>
+        <button class="showImagesButton" data-set="3">botao 4</button>
+        <button class="showImagesButton" data-set="4">botao 5</button>
         
         <div id="portfolio"></div>
+        <button id="loadMore">Carregar Mais</button>
     
         <div id="modal">
             <button class="modal-button left-button" id="prevButton">&#10094;</button>
             <img id="modalImage" src="" alt="Imagem Ampliada">
             <button class="modal-button right-button" id="nextButton">&#10095;</button>
+            <button class="close-button" id="closeButton">&#10005;</button>
         </div>
     
     </section>
