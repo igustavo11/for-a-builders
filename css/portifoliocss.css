@@ -310,10 +310,7 @@ header .icons i:hover{
 .container-contact{
     
     width: 80%;
-    background: #fff;
-    border-radius: 6px;
     padding: 30px 60px 40px 40px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 .container-contact .content-contact{
     display: flex;
@@ -330,16 +327,6 @@ header .icons i:hover{
     justify-content: center;
     margin-top: 15px ;
     position: relative;
-}
-.content-contact .left-side::before{
-    content: '';
-    position: absolute;
-    height: 70%;
-    width: 2px;
-    right: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #333;
 }
 
 .content-contact .left-side .details{
@@ -627,6 +614,7 @@ header .icons i:hover{
     color:var(--colorwhite);
     text-align: center; 
 }
+
 
  
  
