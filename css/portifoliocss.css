@@ -317,15 +317,16 @@ button {
 .container-contact{
     
     width: 80%;
-    background: #fff;
-    border-radius: 6px;
+    /*background: #fff;*/
+    /*border-radius: 6px;*/
     padding: 30px 60px 40px 40px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    /*box-shadow: 0 5px 10px rgba(0,0,0,.2);*/
 }
 .container-contact .content-contact{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 200px;
 
 }
 .container-contact .content-contact .left-side{
@@ -338,7 +339,7 @@ button {
     margin-top: 15px ;
     position: relative;
 }
-.content-contact .left-side::before{
+/*.content-contact .left-side::before{
     content: '';
     position: absolute;
     height: 70%;
@@ -347,11 +348,21 @@ button {
     top: 50%;
     transform: translateY(-50%);
     background: #333;
-}
+}*/
 
 .content-contact .left-side .details{
     margin: 14px;
     text-align: center;
+}
+.content-contact .left-side .contact-img{
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: flex-start; /* Garante que o conteúdo começa no início */
+}
+
+.content-contact .left-side .contact-img img{
+    width: 500px;
+    margin-right: auto;
 }
 .content-contact .left-side .details .text-one,
 .content-contact .left-side .details .text-two{
@@ -377,6 +388,11 @@ button {
     font-size: 23px;
     font-weight: 600;
     color: var(--colorprimamry);
+    margin-bottom: 20px;
+}
+
+.content-contact .right-side p{
+    margin-bottom: 30px;
 }
 .right-side .input-box{
     height: 50px;
@@ -401,6 +417,7 @@ button {
 .right-side .button{
     display: inline-block;
     margin-top:12px ;
+    margin-bottom: 30px;
 }
 
 .input-box input .button input[type="button"]{

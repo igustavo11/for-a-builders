@@ -209,6 +209,10 @@ header .search-bar-container label:hover{
 }
 
 /* about service */
+
+.services{
+    text-align: center;
+}
 .about-service{
     overflow: hidden;
 }
@@ -273,11 +277,8 @@ header .search-bar-container label:hover{
     text-align: center;
     margin-top: 10px;
 }
-/*.card-content{
-    padding: 16px;
-}*/
+
 .card-content{
-    /*margin-bottom: 6px;*/
     width: 100%;
     height: 60px;
     background-color:#ffffff9f;
@@ -294,12 +295,12 @@ header .search-bar-container label:hover{
 
 .btncard{
     display: inline-block;
-    padding: 20px 40px;
-    background-color: white;
-    border: 2px solid black;
-    text-decoration: none;
-    margin-top: 16px;
-    color: black;
+    margin-top: 1rem;
+    background: var(--colorprimamry);
+    color: #f7f7f7;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--colorprimamry);
+    cursor: pointer;
     text-align: center;
 }
 
