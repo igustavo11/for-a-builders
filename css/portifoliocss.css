@@ -335,55 +335,41 @@ header .search-bar-container label:hover{
 }
 
 .container-contact{
-    
     width: 80%;
-    /*background: #fff;*/
-    /*border-radius: 6px;*/
     padding: 30px 60px 40px 40px;
-    /*box-shadow: 0 5px 10px rgba(0,0,0,.2);*/
 }
+
 .container-contact .content-contact{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 200px;
+    align-items: flex-start;
+    gap: 300px;
 
 }
+
 .container-contact .content-contact .left-side{
     width: 25%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    margin-top: 15px ;
     position: relative;
 }
-/*.content-contact .left-side::before{
-    content: '';
-    position: absolute;
-    height: 70%;
-    width: 2px;
-    right: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #333;
-}*/
+
+.container-contact .content-contact .left-side img{
+    width: 450px;
+    margin-bottom:20px;
+}
 
 .content-contact .left-side .details{
     margin: 14px;
-    text-align: center;
-}
-.content-contact .left-side .contact-img{
-    display: flex;
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    justify-content: flex-start; /* Garante que o conteúdo começa no início */
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.content-contact .left-side .contact-img img{
-    width: 500px;
-    margin-right: auto;
-}
 .content-contact .left-side .details .text-one,
 .content-contact .left-side .details .text-two{
     font-size: 14px;
@@ -395,13 +381,33 @@ header .search-bar-container label:hover{
     color: var(--colorprimamry);
     margin-bottom: 10px;
 }
-.content-contact .left-side .details .topic{
+
+.content-contact .left-side .details .content-details{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content-contact .left-side .details .content-details .topic{
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
+
+.content-contact .left-side .social-icons{
+    display:flex;
+    gap:10px;
+    margin-top: 20px;
+}
+
+.content-contact .left-side .social-icons a{
+    color: var(--colorprimamry);
+}
+
 .container-contact .content-contact .right-side{
     width: 75%;
     margin-left: 75px;
+    
  
 }
 .content-contact .right-side .topic-text{
@@ -419,6 +425,7 @@ header .search-bar-container label:hover{
     width: 100%;
     margin: 12px 0;
 }
+
 .right-side .input-box input,
 .right-side .input-box textarea{
     height: 100%;
@@ -450,9 +457,8 @@ header .search-bar-container label:hover{
     background: var(--colorprimamry);
     cursor: pointer;
    
-
-
 }
+
 
 
 .footer{
