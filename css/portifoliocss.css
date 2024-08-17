@@ -208,8 +208,24 @@ header .search-bar-container label:hover{
    background: var(--colorprimamry); 
 }
 
-h1 {
-    text-align: center;
+#button-container {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+#button-container button {
+    display: inline-block; 
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+#button-container button:hover{
+    background-color: var(--colorprimamry);
 }
 
 #portfolio {
@@ -226,15 +242,18 @@ h1 {
     transition: transform 0.2s;
     width: 100%; 
     height: auto; 
+    object-fit: cover; 
 }
 
 #portfolio img:hover {
     transform: scale(1.05);
 }
+
 .active {
-    background-color: #007bff;
+   background-color: var(--colorprimamry) !important;
     color: white;
 }
+
 #modal {
     display: none;
     position: fixed;
@@ -257,9 +276,9 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--colorprimamry);
     border: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     font-size: 16px;
     z-index: 1001;
@@ -284,9 +303,10 @@ h1 {
     cursor: pointer;
     z-index: 1001;
 }
-button {
-    
-    margin: 5px;
+
+#loadMore {
+    display: block;
+    margin: 20px auto; 
     padding: 10px 20px;
     cursor: pointer;
     border: none;
@@ -578,6 +598,13 @@ button {
     }
     #portfolio {
         grid-template-columns: repeat(2, 1fr); 
+    }
+    .modal-button {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+    .close-button {
+        font-size: 20px; 
     }
 
 
