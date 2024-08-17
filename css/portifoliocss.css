@@ -4,6 +4,9 @@
     --colorprimamry:#daa520;
     --colorwhite: #fff;
 }
+body{
+    overflow-x: hidden;
+}
 
 *{
     font-family: "Raleway", sans-serif;
@@ -105,37 +108,7 @@ header .icons i{
 header .icons i:hover{
     color: var(--colorprimamry);
 }
-header .search-bar-container{
-    position: absolute;
-    top: 100% ; left: 0; right: 0;
-    padding:1.5rem 2rem;
-    background: #333;
-    border-top: 1rem solid rgba(255, 255, 255, .2);
-    display: flex;
-    align-items: center;
-    z-index: 1001;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-header .search-bar-container.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-header .search-bar-container #search-bar{
-    width: 100%;
-    padding: 1rem;
-    text-transform: none;
-    color: #333;
-    font-size: 1rem;
-    border-radius: .5rem;
-}
-header .search-bar-container label{
-    color: var(--colorwhite);
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 1.5rem;
-}
-header .search-bar-container label:hover{
-    color: var(--colorprimamry);
-}
+
 
 #menu-bar{
     color: var(--colorwhite);
@@ -249,8 +222,8 @@ header .search-bar-container label:hover{
     transform: scale(1.05);
 }
 
-.active {
-   background-color: var(--colorprimamry) !important;
+.active2 {
+   background-color: var(--colorprimamry)!important;
     color: white;
 }
 
@@ -276,7 +249,7 @@ header .search-bar-container label:hover{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: var(--colorprimamry);
+    background-color: #666;
     border: none;
     padding: 15px;
     cursor: pointer;
@@ -438,7 +411,154 @@ header .search-bar-container label:hover{
 }
 
 
-.footer{
+.review .review-slider{
+    padding-bottom: 2rem; 
+ }
+ .review .box{
+     padding: 2rem;
+     text-align: center;
+     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+     border-radius: .2rem;
+ }
+ .review .box h3{
+     color:#333;
+     font-size: 1.5rem;
+ }
+ .review .box p{
+     color: #666;
+     font-size: 1rem;
+     padding:1rem 0 ;
+ }
+ 
+ .container-contact{
+     width: 80%;
+     padding: 30px 60px 40px 40px;
+ }
+ 
+ .container-contact .content-contact{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     align-items: flex-start;
+     gap: 300px;
+ 
+ }
+ 
+ .container-contact .content-contact .left-side{
+     width: 25%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: center;
+     position: relative;
+ }
+ 
+ .container-contact .content-contact .left-side img{
+     width: 450px;
+     margin-bottom:20px;
+ }
+ 
+ .content-contact .left-side .details{
+     margin: 14px;
+     display:flex;
+     flex-direction: row;
+     gap: 20px;
+ }
+ 
+ .content-contact .left-side .details .text-one,
+ .content-contact .left-side .details .text-two{
+     font-size: 14px;
+     color: #333;
+ 
+ }
+ .content-contact .left-side .details i{
+     font-size: 30px;
+     color: var(--colorprimamry);
+     margin-bottom: 10px;
+ }
+ 
+ .content-contact .left-side .details .content-details{
+     display:flex;
+     flex-direction: column;
+     text-align: left;
+ }
+ 
+ .content-contact .left-side .details .content-details .topic{
+     font-size: 18px;
+     font-weight: 500;
+     margin-bottom: 10px;
+ }
+ 
+ .content-contact .left-side .social-icons{
+     display:flex;
+     gap:10px;
+     margin-top: 20px;
+ }
+ 
+ .content-contact .left-side .social-icons a{
+     color: var(--colorprimamry);
+ }
+ 
+ .container-contact .content-contact .right-side{
+     width: 75%;
+     margin-left: 75px;
+     
+  
+ }
+ .content-contact .right-side .topic-text{
+     font-size: 23px;
+     font-weight: 600;
+     color: var(--colorprimamry);
+     margin-bottom: 20px;
+ }
+ 
+ .content-contact .right-side p{
+     margin-bottom: 30px;
+ }
+ .right-side .input-box{
+     height: 50px;
+     width: 100%;
+     margin: 12px 0;
+ }
+ 
+ .right-side .input-box input,
+ .right-side .input-box textarea{
+     height: 100%;
+     width: 100%;
+     border: none;
+     font-size: 13px;
+     background: #f7f7f7;
+     border-radius: 6px;
+     padding: 0 15px;
+     resize: none;
+ }
+ .right-side .message-box{
+     min-height: 110px;
+     
+ }
+ .right-side .button{
+     display: inline-block;
+     margin-top:12px ;
+     margin-bottom: 30px;
+ }
+ 
+ .input-box input .button input[type="button"]{
+     color: #fff;
+     font-size: 18px;
+     outline: none;
+     border: none;
+     padding: 8px 16px;
+     border-radius: 6px;
+     background: var(--colorprimamry);
+     cursor: pointer;
+    
+ }
+ 
+ 
+ 
+
+ .footer{
     background: #333;
 
 }
@@ -508,9 +628,8 @@ header .search-bar-container label:hover{
     text-align: center; 
 }
 
-
-
-
+ 
+ 
 
 
 

@@ -19,6 +19,9 @@
     background: var(--colorprimamry);
     color:var(--colorwhite);
 }
+body{
+    overflow-x: hidden;
+}
 
 html{
     
@@ -497,6 +500,10 @@ header .icons i:hover{
         margin: 1.5rem 0;
         
     }
+    
+    header{
+        justify-content: space-between;
+    }
     .rowt{
         width: 90%;
     }
@@ -526,6 +533,10 @@ header .icons i:hover{
         width: 350px;
         row-gap: 1em;
       }
+      .about{
+        margin-left: 25px;
+      }
+     
 }
 
 @media (max-width:450px){

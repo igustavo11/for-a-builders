@@ -63,13 +63,13 @@ function handleKeyPress(event) {
 }
 
 function setActiveButton(clickedButton) {
-    buttons.forEach(button => button.classList.remove('active'));
-    clickedButton.classList.add('active');
+    buttons.forEach(button => button.classList.remove('active2'));
+    clickedButton.classList.add('active2');
 }
 
 function initializePage() { //inicializar na modal 0
     const firstButton = buttons[0];
-    firstButton.classList.add('active');
+    firstButton.classList.add('active2');
     currentImageSet = imageSets[firstButton.dataset.set];
     showImages(currentImageSet);
 }
