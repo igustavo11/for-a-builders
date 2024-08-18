@@ -52,6 +52,26 @@ valueDisplays.forEach((valueDisplay)=>{
     }, duration);
 });
 
+const contactForm = document.getElementById('contact-form')
+const contactMessage = document.getElementById('message')
+const sendMail = (e) =>{
+    e.preventDefault()
+    emailjs.sendForm('service_4554l6j', 'template_y2bap5l', '#contact-form')
+    .then(() =>{
+        contactMessage.textContent = 'Email enviado!'
+
+        setTimeout(()=>{
+            contactMessage.textContent = ''
+        }, 5000)
+
+        contactForm.reset()
+    }, ()=>{
+        contactMessage.textContent = 'Email não enviado!'
+    });
+
+}
+
+contactForm.addEventListener('submit', sendMail)
 
 
 
