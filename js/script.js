@@ -1,4 +1,3 @@
-
 let menu = document.querySelector('#menu-bar');
 let navbar= document.querySelector('.navbar');
 let picBtn= document.querySelectorAll('.pic-btn');
@@ -52,6 +51,22 @@ valueDisplays.forEach((valueDisplay)=>{
     }, duration);
 });
 
+const contactForm = document.getElementById('contact-form'), contactMessage = document.getElementById('contact-message')
 
+const sendEmail = (e) =>{
+    e.preventDefault()
+    emailjs.sendForm('service_4554l6j','template_y2bap5l','#contact-form','i6-2MEpod0doCCabg' )
+    .then(() =>{
+        contactMessage.textContent = 'Email sent ✅'
+        setTimeout(()=>{
+           contactMessage.textContent = '' 
+        }, 5000)
 
+        contactForm.reset()
 
+    }, ()=>{
+        contactMessage.textContent = 'Email not sent error ❌'
+    });
+}
+
+contactForm.addEventListener('submit', sendEmail)

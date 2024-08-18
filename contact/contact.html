@@ -7,6 +7,7 @@
     <title>ForçaBuilders</title>
     <link rel="stylesheet" href="/css/portifoliocss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
 </head>
 <body>
     <header id="header">
@@ -35,83 +36,81 @@
     
         </section>
           
-
-        
-           
+       
    <section>
-    <section>
-        <div class="container">
-            <div class="container-contact">
-                <div class="content-contact">
-                    <div class="left-side">
-                        <img src="/img/img teste/4.jpg" alt="">
-                        <div class="anddress details">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="content-details">
-                                <div class="topic">Address</div>
-                                <div class="text-one">Lorem ipsum.</div>
-                                <div class="text-two">Lorem ipsum.</div>
-                            </div>
+    <div class="container">
+        <div class="container-contact">
+            <div class="content-contact">
+                <div class="left-side">
+                    <img src="/img/img teste/4.jpg" alt="">
+                    <div class="anddress details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="content-details">
+                            <div class="topic">Address</div>
+                            <div class="text-one">Lorem ipsum.</div>
+                            <div class="text-two">Lorem ipsum.</div>
                         </div>
-                        <div class="phone details">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="content-details">
-                                <div class="topic">Phone</div>
-                                <div class="text-one">+31999999</div>
-                                <div class="text-two">+0099 9999 9999</div>
-                            </div>
-                        </div>
-                        <div class="email details">
-                            <i class="fas fa-envelope"></i>
-                            <div class="content-details">
-                                <div class="topic">Email</div>
-                                <div class="text-one">email@email.com</div>
-                                <div class="text-two">email@email.com</div>
-                                
-                                <div class="social-icons">
-                                    <a href="#"><i class="fab fa-instagram"  style='font-size:30px'></i></a>
-                                    <a href="#"><i class="fab fa-whatsapp"  style='font-size:30px'></i></a>
-                                    <a href="#"><i class="fab fa-youtube"  style='font-size:30px'></i></a>
-                                </div>
-                            </div>
-                        </div>
-                       
                     </div>
-    
-                    <div class="right-side">
-                        <div class="topic-text">Send us a message</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum erat. Curabitur non aliquet augue. Nullam luctus diam vel sodales pharetra.<br> Nam enim tellus, aliquet eget nulla ac, interdum ornare dui. Nulla vitae arcu sit amet purus convallis dignissim at viverra tellus. </p>
-                    
-                    <form action="#">
-                        <div class="input-box">
-                            <input type="text" placeholder="Name *" required>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="content-details">
+                            <div class="topic">Phone</div>
+                            <div class="text-one">+31999999</div>
+                            <div class="text-two">+0099 9999 9999</div>
                         </div>
-                        <div class="input-box">
-                            <input type="text" placeholder="Email *" required>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="content-details">
+                            <div class="topic">Email</div>
+                            <div class="text-one">email@email.com</div>
+                            <div class="text-two">email@email.com</div>
+                            
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"  style='font-size:30px'></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"  style='font-size:30px'></i></a>
+                                <a href="#"><i class="fab fa-youtube"  style='font-size:30px'></i></a>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <input type="text" placeholder="Phone *" required>
-                        </div>
-                        <div class="input-box message-box">
-                            <textarea name="message" placeholder="Message *" id="" rows="8" cols="80" required></textarea>
-                        </div>
-                        <div class="button" >
-                            <input type="button" class="btn" value="SEND MESSAGE">
-                        </div>
-                    </form>
-                    <div class="topic-text">Trade Partners</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum erat. Curabitur non aliquet augue. Nullam luctus diam vel sodales pharetra.<br> Nam enim tellus, aliquet eget nulla ac, interdum ornare dui. Nulla vitae arcu sit amet purus convallis dignissim at viverra tellus. </p>
-                    <div class="topic-text">Trade Partners</div>
+                    </div>
+                   
+                </div>
+
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum erat. Curabitur non aliquet augue. Nullam luctus diam vel sodales pharetra.<br> Nam enim tellus, aliquet eget nulla ac, interdum ornare dui. Nulla vitae arcu sit amet purus convallis dignissim at viverra tellus. </p>
                 
-                </div>
-                </div>
-            </div>
-    
-        </div>
+                    <form action=""  id="contact-form" data-form>
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Name *" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text"  name="email" id="email" placeholder="Email *" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="phone" id="phone" placeholder="Phone *" required>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea name="message" placeholder="Message *" name="message" id="message" rows="8" cols="80" required></textarea>
+                    </div>
+                    <p class="contact__message" id="contact-message"></p>
+                    <div class="button" >
+                        <button type="submit" class="btn" value="SEND MESSAGE" >Send </button>
+                    </div>
+                </form>
+                <div class="topic-text">Trade Partners</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum erat. Curabitur non aliquet augue. Nullam luctus diam vel sodales pharetra.<br> Nam enim tellus, aliquet eget nulla ac, interdum ornare dui. Nulla vitae arcu sit amet purus convallis dignissim at viverra tellus. </p>
+                <div class="topic-text">Trade Partners</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum erat. Curabitur non aliquet augue. Nullam luctus diam vel sodales pharetra.<br> Nam enim tellus, aliquet eget nulla ac, interdum ornare dui. Nulla vitae arcu sit amet purus convallis dignissim at viverra tellus. </p>
             
-    
-       </section>
+            </div>
+            </div>
+        </div>
+
+    </div>
+        
+
+   </section>
    <section class="footer">
     <div class="box-container">
     
@@ -143,6 +142,12 @@
     <h1 class=""></h1>
 </section>
     <script src="/js/script.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    
 
     
 </body>
