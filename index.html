@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForçaBuilders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
    
 </head>
 <body>
@@ -31,21 +31,29 @@
     </header>
 
     <section class="home" id="#home">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/img teste/1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/img teste/6.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/img teste/7.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/img teste/12.jpg">
+                </div>
+             </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         <div class="content">
             <h3>build your dreams</h3>
             <p>dicover new places with us</p>
             <a href="/portifolio/portifolio.html" class="btn">Explore</a>
         </div>
-        <div class="controls">
-            <span class="pic-btn active" img-src="/img/img teste/1.jpg"></span>
-            <span class="pic-btn" img-src="/img/img teste/6.jpg"></span>
-            <span class="pic-btn" img-src="/img/img teste/7.jpg"></span>
-            <span class="pic-btn" img-src="/img/img teste/12.jpg"></span>
-        </div>
-        <div class="foto-container">
-            <img src="/img/img teste/1.jpg" alt="" id="img-slider">
-        </div>
-
     </section>
 
     <section class="about" id="about">
@@ -176,8 +184,32 @@
 
 
 
-   
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  
+  });
+</script>
     <script src="js/script.js"></script>
+
     
 </body>
 </html>
