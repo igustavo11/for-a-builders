@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForçaBuilders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
    
 </head>
 <body>
@@ -31,21 +31,29 @@
     </header>
 
     <section class="home" id="#home">
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/img teste/1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/img teste/6.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/img teste/7.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/img teste/12.jpg">
+                </div>
+             </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         <div class="content">
             <h3>build your dreams</h3>
             <p>dicover new places with us</p>
             <a href="/portifolio/portifolio.html" class="btn">Explore</a>
         </div>
-        <div class="controls">
-            <span class="pic-btn active" img-src="/img/img teste/1.jpg"></span>
-            <span class="pic-btn" img-src="/img/img teste/6.jpg"></span>
-            <span class="pic-btn" img-src="/img/img teste/7.jpg"></span>
-            <span class="pic-btn" img-src="/img/img teste/12.jpg"></span>
-        </div>
-        <div class="foto-container">
-            <img src="/img/img teste/1.jpg" alt="" id="img-slider">
-        </div>
-
     </section>
 
     <section class="about" id="about">
@@ -83,38 +91,39 @@
     
            
         </section>
+        <section class="value-section">
+            <h2>The Value <span>We Bring</span> </h2>
+            <div class="value-cards">
+                <div class="card">
+                    <img src="img/img teste/3.jpg" alt="Quality">
+                    <h3>Quality</h3>
+                    <p>within our highest levels of craft</p>
+                </div>
+                <div class="card">
+                    <img src="img/img teste/4.jpg" alt="Care">
+                    <h3>Care</h3>
+                    <p>for the unique needs of our client</p>
+                </div>
+                <div class="card">
+                    <img src="img/img teste/10.jpg" alt="Commitment">
+                    <h3>Commitment</h3>
+                    <p>to doing the job the right way - always</p>
+                </div>
+            </div>
+            <a href="services/services.html" class="btn">Services</a>
+        </section>
         <!--- -->
         <section class="portfolio-home">
             <div class="image-portifolio">
-              <img src="img/img teste/2.jpg" alt="Imagem do banheiro">
-              <img src="img/img teste/3.jpg" alt="Imagem do restaurante">
-              <img src="img/img teste/5.jpg" alt="Imagem da fachada">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <a href="services/services.html" class="btn">Services</a>
           </section>
           
     
-    <section class="value-section">
-        <h2>The Value <span>We Bring</span> </h2>
-        <div class="value-cards">
-            <div class="card">
-                <img src="img/img teste/3.jpg" alt="Quality">
-                <h3>Quality</h3>
-                <p>within our highest levels of craft</p>
-            </div>
-            <div class="card">
-                <img src="img/img teste/4.jpg" alt="Care">
-                <h3>Care</h3>
-                <p>for the unique needs of our client</p>
-            </div>
-            <div class="card">
-                <img src="img/img teste/10.jpg" alt="Commitment">
-                <h3>Commitment</h3>
-                <p>to doing the job the right way - always</p>
-            </div>
-        </div>
-        <a href="services/services.html" class="btn">Services</a>
-    </section>
+   
    
 
   <!---<section class="mid">
@@ -176,8 +185,39 @@
 
 
 
-   
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    grabCursor: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+    slidesPerGroup: 1,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView:1,
+      },
+      600: {
+        slidesPerView: 1,
+      },
+    }
+  });
+</script>
     <script src="js/script.js"></script>
+
     
 </body>
 </html>
