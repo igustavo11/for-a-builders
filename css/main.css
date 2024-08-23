@@ -260,9 +260,7 @@ swiper{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
-   
-    
+    gap: 3rem;  
 }
 .rowt .video{
     flex: 1 1 41rem;
@@ -518,6 +516,9 @@ swiper{
     html{
     font-size: 70%;
     }
+    .swiper{
+        height: auto;
+    }
 }
 
 @media (max-width:991px){
@@ -528,15 +529,17 @@ swiper{
         padding: 2rem;
     }
     .rowt{
-       
         grid-template-columns:1fr ;
         grid-gap:50px;
         
     }
     .rowt .contentWrapper{
-       
         padding-left: 0;
     }
+
+    .card img {
+        width: 32vw; 
+      }
    
 }
 @media (max-width:768px){
@@ -565,8 +568,19 @@ swiper{
     header{
         justify-content: space-between;
     }
+
+    .about{
+        margin-left:0;
+    }
+    .about .heading-about{
+        margin-left: 25px;
+    }
     .rowt{
         width: 90%;
+        margin-left: 25px;
+    }
+    .rowt .contentWrapper{
+        text-align: center;
     }
     .rowt .contentWrapper h2{
         font-size: 30px;
@@ -575,6 +589,15 @@ swiper{
     }
     .rowt .contentWrapper p{
         line-height: 24px;
+        text-align: start;
+    }
+
+    .boxabout{
+        grid-template-columns: 1fr;
+        width: 350px;
+        row-gap: 1em;
+        margin:0 auto;
+        margin-top: 20px;
     }
 
     .gallery{
@@ -585,20 +608,23 @@ swiper{
     }
     .value-cards {
         flex-direction: column; 
-      }
-      .card img {
-        width: 350px; 
-      }
-      .boxabout{
-        grid-template-columns: 1fr;
-        width: 350px;
-        row-gap: 1em;
-      }
-      .about{
-        margin-left: 25px;
-      }
-      
-     
+    }
+    .card img {
+         width: 350px; 
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .footer .box-container{
+        display: block;
+        text-align: center;
+    }
+
+    .footer .box-container .box .social-icons{
+        justify-content: center;
+    }
 }
 
 @media (max-width:450px){
@@ -614,18 +640,11 @@ swiper{
 
     }
 
-    .home .content{
-        top: 60%;
-    }
     .home .content h3{
         font-size: 2rem ;
     }
     .home .content p{
         font-size: 16px;
-    }
-
-    .swiper{
-        height: auto;
     }
 
     .rowt .contentWrapper span.textWrapper{
