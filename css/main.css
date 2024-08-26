@@ -672,13 +672,5 @@ swiper{
         font-size: 18px;
     }
 
-    .footer .box-container{
-        display: block;
-        text-align: center;
-    }
-
-    .footer .box-container .box .social-icons{
-        justify-content: center;
-    }
 }
 
