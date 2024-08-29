@@ -447,6 +447,7 @@ header .search-bar-container label:hover{
 @media (max-width:768px){
     #menu-bar{
         display: initial;
+        margin-right: -2.4rem;
     }
     header .navbar{
         position: absolute;
@@ -465,6 +466,10 @@ header .search-bar-container label:hover{
         padding: 1.5rem;
         margin: 1.5rem 0;
         
+    }
+    header .logo{
+        display:block;
+        margin:0 auto;
     }
   
     .about-service{
@@ -528,7 +533,7 @@ header .search-bar-container label:hover{
     }
     
     header img{
-        width: 12vw;
+        width: 20vw;
     }
     .about-service{
         margin: 0px;

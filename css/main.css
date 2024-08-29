@@ -405,6 +405,7 @@ swiper{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
+    gap:3rem;
   }
   
   .image-portifolio img {
@@ -545,6 +546,7 @@ swiper{
 @media (max-width:768px){
     #menu-bar{
         display: initial;
+        margin-right: -2.4rem;
     }
     header .navbar{
         position: absolute;
@@ -564,9 +566,9 @@ swiper{
         margin: 1.5rem 0;
         
     }
-    
-    header{
-        justify-content: space-between;
+    header .logo{
+        display:block;
+        margin:0 auto;
     }
 
     .about{
@@ -636,7 +638,7 @@ swiper{
     }
 
     header img{
-        width: 12vw;
+        width: 20vw;
 
     }
 
