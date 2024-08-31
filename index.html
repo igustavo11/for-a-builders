@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForçaBuilders</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -46,20 +47,20 @@
                     <img src="/img/img teste/12.jpg">
                 </div>
              </div>
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="content">
+        <div class="content ">
             <h3>build your dreams</h3>
             <p>dicover new places with us</p>
-            <a href="/portifolio/portifolio.html" class="btn">Explore</a>
+            <a href="/portifolio/portifolio.html" class="btn wow fadeInUp delay-03s">Explore</a>
         </div>
     </section>
 
     <section class="about" id="about">
         <h1 class="heading-about">About Us</h1>
         <div class="rowt">
-            <div class="video">
+            <div class="video wow fadeInUp delay-05s">
                 <video src="img/render video.mp4" loop muted autoplay></video>
             </div>
             <div class="contentWrapper">
@@ -91,7 +92,7 @@
     
            
         </section>
-        <section class="value-section">
+        <section class="value-section wow fadeInUp delay-05s">
             <h2>The Value <span>We Bring</span> </h2>
             <div class="value-cards">
                 <div class="card">
@@ -113,33 +114,18 @@
             <a href="services/services.html" class="btn">Services</a>
         </section>
         <!--- -->
-        <section class="portfolio-home">
+        <section class="portfolio-home wow fadeInUp delay-05s">
             <div class="image-portifolio">
-                <iframe width="500" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="500" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="500" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/5F-B6vO_lBU?si=1srI6j9J4C1KNsIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <a href="services/services.html" class="btn">Services</a>
           </section>
           
     
    
    
 
-  <!---<section class="mid">
-        <div class="container">
-            <div class="gallery">
-                <div class="img-box"></div>
-                <div class="img-box"></div>
-                <div class="img-box"></div>
-               
-            </div>
-            
-        </div>
-
-    </div>
-
-</section> -->  
   
    
 <section class="footer">
@@ -182,7 +168,9 @@
 
 
 
-
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/modernizr-3.5.0.min.js"></script>
 
 
 <script type="module">
@@ -217,7 +205,7 @@
   });
 </script>
     <script src="js/script.js"></script>
-
+    <script>new WOW().init();</script>
     
 </body>
 </html>

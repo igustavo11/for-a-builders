@@ -625,6 +625,17 @@ header .icons i:hover{
     html{
     font-size: 70%;
     }
+    section{
+        padding: 2rem;
+    }
+
+    .container-contact .content-contact .left-side img{
+        width: 40vw;
+    }
+
+    .container-contact .content-contact .right-side{
+        margin-left: 0;
+    }
 }
 
 @media (max-width:991px){
@@ -636,14 +647,18 @@ header .icons i:hover{
     }
     .container-contact{
         width: 90%;
-  
-        padding: 30px 35px 40px 35px;
-       
+        padding: 30px 35px 40px 35px;  
     }
+    .container-contact .content-contact{
+        gap:250px;
+    }
+
 }
 @media (max-width:768px){
     #menu-bar{
         display: initial;
+        margin-right: -2.4rem;
+        
     }
     header .navbar{
         position: absolute;
@@ -663,6 +678,11 @@ header .icons i:hover{
         margin: 1.5rem 0;
         
     }
+
+    header .logo{
+        display:block;
+        margin:0 auto;
+    }
     .container-contact{
         margin: 40px 0;
         height: 100%;
@@ -670,14 +690,18 @@ header .icons i:hover{
     }
     .container-contact .content-contact{
         flex-direction: column-reverse;
+        gap:0px;
 
     }
     .container-contact .content-contact .left-side{
         width: 100%;
-        flex-direction: row;
-        margin-top: 40px;
+        flex-direction: column;
+        margin-top: 10px;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .container-contact .content-contact .left-side img{
+        width: 60vw;
     }
     .container-contact .content-contact .left-side::before{
         display: none;
@@ -700,12 +724,27 @@ header .icons i:hover{
 
 }
 
+@media (max-width: 600px){
+    .footer .box-container{
+        display: block;
+        text-align: center;
+    }
+
+    .footer .box-container .box .social-icons{
+        justify-content: center;
+    }
+}
+
 @media (max-width:450px){
     html{
         font-size: 70%;
     }
     .heading span{
         font-size: 2.5rem;
+    }
+    header img{
+        width: 20vw;
+
     }
     #portfolio {
         grid-template-columns: 1fr; 

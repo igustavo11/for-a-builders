@@ -125,7 +125,7 @@ header .icons i:hover{
 
 .home{
     width: 100%;
-    height: 85vh;
+    /*height: 85vh;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +181,7 @@ header .icons i:hover{
     width: 100%; 
     height: auto; 
     object-fit: cover;
+    display: block;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -259,9 +260,7 @@ swiper{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
-   
-    
+    gap: 3rem;  
 }
 .rowt .video{
     flex: 1 1 41rem;
@@ -359,6 +358,8 @@ swiper{
   .value-cards {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     margin: 20px 0;
   }
  
@@ -404,6 +405,7 @@ swiper{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
+    gap:3rem;
   }
   
   .image-portifolio img {
@@ -515,6 +517,9 @@ swiper{
     html{
     font-size: 70%;
     }
+    .swiper{
+        height: auto;
+    }
 }
 
 @media (max-width:991px){
@@ -525,20 +530,23 @@ swiper{
         padding: 2rem;
     }
     .rowt{
-       
         grid-template-columns:1fr ;
         grid-gap:50px;
         
     }
     .rowt .contentWrapper{
-       
         padding-left: 0;
     }
+
+    .card img {
+        width: 32vw; 
+      }
    
 }
 @media (max-width:768px){
     #menu-bar{
         display: initial;
+        margin-right: -2.4rem;
     }
     header .navbar{
         position: absolute;
@@ -558,12 +566,23 @@ swiper{
         margin: 1.5rem 0;
         
     }
-    
-    header{
-        justify-content: space-between;
+    header .logo{
+        display:block;
+        margin:0 auto;
+    }
+
+    .about{
+        margin-left:0;
+    }
+    .about .heading-about{
+        margin-left: 25px;
     }
     .rowt{
         width: 90%;
+        margin-left: 25px;
+    }
+    .rowt .contentWrapper{
+        text-align: center;
     }
     .rowt .contentWrapper h2{
         font-size: 30px;
@@ -572,6 +591,15 @@ swiper{
     }
     .rowt .contentWrapper p{
         line-height: 24px;
+        text-align: start;
+    }
+
+    .boxabout{
+        grid-template-columns: 1fr;
+        width: 350px;
+        row-gap: 1em;
+        margin:0 auto;
+        margin-top: 20px;
     }
 
     .gallery{
@@ -582,20 +610,23 @@ swiper{
     }
     .value-cards {
         flex-direction: column; 
-      }
-      .card img {
-        width: 350px; 
-      }
-      .boxabout{
-        grid-template-columns: 1fr;
-        width: 350px;
-        row-gap: 1em;
-      }
-      .about{
-        margin-left: 25px;
-      }
-      
-     
+    }
+    .card img {
+         width: 350px; 
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .footer .box-container{
+        display: block;
+        text-align: center;
+    }
+
+    .footer .box-container .box .social-icons{
+        justify-content: center;
+    }
 }
 
 @media (max-width:450px){
@@ -605,7 +636,19 @@ swiper{
     .heading span{
         font-size: 2.5rem;
     }
-    
+
+    header img{
+        width: 20vw;
+
+    }
+
+    .home .content h3{
+        font-size: 2rem ;
+    }
+    .home .content p{
+        font-size: 16px;
+    }
+
     .rowt .contentWrapper span.textWrapper{
         font-size: 18px;
     }
@@ -618,4 +661,18 @@ swiper{
         font-size: 15px;
         line-height: 22px;
     }
+
+    .boxabout .cardbox{
+        padding: 1rem ;
+
+    }
+    .cardbox h3{
+        font-size: 2rem;
+    
+    }
+    .cardbox p{
+        font-size: 18px;
+    }
+
 }
+

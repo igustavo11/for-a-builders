@@ -16,7 +16,7 @@ function showImages(imageSet) {
     portfolioDiv.innerHTML = '';
     const currentImages = imageSet.slice(0, displayedImagesCount);
     currentImages.forEach((image, index) => {
-        const imgElement = `<img src="${image}" alt="Imagem" class="house-image" data-index="${index}">`;
+        const imgElement = `<img src="${image}" alt="Imagem" class="house-image animate wow fadeInUp" data-index="${index}">`;
         portfolioDiv.innerHTML += imgElement;
     });
     addImageClickListener();
