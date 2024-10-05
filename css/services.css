@@ -313,6 +313,9 @@ header .search-bar-container label:hover{
     cursor: pointer;
     text-align: center;
 }
+.serviceTitle{
+    font-size: 30px;
+}
 
 
 
