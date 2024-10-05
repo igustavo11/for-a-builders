@@ -245,8 +245,8 @@ header .search-bar-container label:hover{
 }
 .hero-img{
     flex: 1;
-    width: 700px;
-    margin: auto;
+    width: 600px;
+    margin: 19px;
 }
 .hero-img img{
     width: 100%;

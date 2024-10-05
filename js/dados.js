@@ -9,7 +9,7 @@ const nextButton = document.getElementById('nextButton');
 const closeButton = document.getElementById('closeButton');
 
 let currentIndex = 0;
-let displayedImagesCount = 8;
+let displayedImagesCount = 12;
 let currentImageSet = [];
 
 function showImages(imageSet) {

@@ -31,7 +31,19 @@ const imageSets = [
         '../img/casa2/13.jpg',
         '../img/casa2/14.jpg',
         '../img/casa2/15.jpg',
-        '../img/casa2/16.jpg'
+        '../img/casa2/16.jpg',
+        '../img/casa4/1.jpg',
+        '../img/casa4/2.jpg',
+        '../img/casa4/3.jpg',
+        '../img/casa4/4.jpg',
+        '../img/casa4/5.jpg',
+        '../img/casa4/6.jpg',
+        '../img/casa4/7.jpg',
+        '../img/casa4/8.jpg',
+        '../img/casa4/9.jpg',
+        '../img/casa4/10.jpg',
+        '../img/casa4/11.jpg',
+        '../img/casa4/12.jpg'
     ],
     [
         '../img/casa3/1.jpg',
@@ -50,21 +62,7 @@ const imageSets = [
         '../img/casa3/14.jpg'
     
     ],
-    [
-        '../img/casa4/1.jpg',
-        '../img/casa4/2.jpg',
-        '../img/casa4/3.jpg',
-        '../img/casa4/4.jpg',
-        '../img/casa4/5.jpg',
-        '../img/casa4/6.jpg',
-        '../img/casa4/7.jpg',
-        '../img/casa4/8.jpg',
-        '../img/casa4/9.jpg',
-        '../img/casa4/10.jpg',
-        '../img/casa4/11.jpg',
-        '../img/casa4/12.jpg'
-        
-    ],
+   
     [
         '../img/casa5/1.jpg',
         '../img/casa5/2.jpg',

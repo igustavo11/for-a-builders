@@ -275,8 +275,10 @@ swiper{
     font-size: 2.5rem;
 }
 .contentWrapper p{
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 18px;
+    line-height: 1;
+    font-weight: bold;
 }
 .boxabout{
     margin-top: 3rem;
@@ -509,6 +511,44 @@ swiper{
     text-align: center; 
 }
 
+
+
+
+.Youtube\ Channel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttonYT {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF0000; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.buttonYT a{
+    text-decoration: none;
+    color: #FFF;
+}
+.buttonYT:hover {
+    background-color: #cc0000; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonYT:active {
+    background-color: #990000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.buttonYT i {
+    margin-right: 8px; 
+    color: #000;
+}
 
 
 
