@@ -278,7 +278,7 @@ swiper{
     font-size: 17px;
     margin-top: 18px;
     line-height: 1;
-    font-weight: bold;
+    
 }
 .boxabout{
     margin-top: 3rem;
@@ -650,10 +650,21 @@ swiper{
     }
     .value-cards {
         flex-direction: column; 
+        
     }
+    
     .card img {
          width: 350px; 
     }
+    .value-cards .card h3,p{
+        margin-top: 9px;
+        margin-bottom: 15px;
+    }
+    .content h3{
+        margin-top: 90px;
+    }
+   
+
 
     
 }
