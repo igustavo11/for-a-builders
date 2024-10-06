@@ -514,40 +514,62 @@ swiper{
 
 
 
+.portfolio-home {
+    text-align: center;
+    margin-top: 50px;
+}
+
 .Youtube\ Channel h2 {
+    
     font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.buttonYT {
-    margin-top: 25px;
-    display: inline-block;
+.social-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.btn5 {
+    display: inline-flex;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #FF0000; 
-    color: white;
     font-size: 18px;
     font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-.buttonYT a{
     text-decoration: none;
-    color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.buttonYT:hover {
-    background-color: #cc0000; 
+
+.btn i {
+    margin-right: 8px; 
+    color: #000;
+}
+
+
+.youtube {
+    background-color: #FF0000; 
+}
+
+.youtube:hover {
+    background-color: #cc0000;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.buttonYT:active {
-    background-color: #990000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.instagram {
+    background-color: #C13584; 
 }
-.buttonYT i {
-    margin-right: 8px; 
-    color: #000;
+
+.instagram:hover {
+    background-color: #a02d6c;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 

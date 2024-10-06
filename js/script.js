@@ -38,7 +38,7 @@ const contactForm = document.getElementById('contact-form'), contactMessage = do
 
 const sendEmail = (e) =>{
     e.preventDefault()
-    emailjs.sendForm('service_4554l6j','template_y2bap5l','#contact-form','i6-2MEpod0doCCabg' )
+    emailjs.sendForm('service_gqa4ow4','template_vieq96m','#contact-form','HygU5DZwf6EDu6pnz' )
     .then(() =>{
         contactMessage.textContent = 'Email sent ✅'
         setTimeout(()=>{
